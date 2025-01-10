@@ -13,107 +13,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Montserrat:ital,wght@0,400;0,900;1,400;1,900&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
 
     <!-- Font Awesome CDN -->
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-        }
-
-        .navbar {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 10px 20px;
-            background-color: maroon;
-            color: white;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 50px;
-            z-index: 1000;
-        }
-
-        .navbar .logo img {
-            height: 50px;
-        }
-
-        .navbar .menu {
-            display: flex;
-            gap: 20px;
-            margin-left: auto;
-            margin-right: 20px;
-        }
-
-        .navbar .menu a {
-            text-decoration: none;
-            color: white;
-            font-size: 1em;
-            transition: color 0.3s;
-        }
-
-        .navbar .menu a:hover {
-            color: limegreen;
-        }
-
-        .navbar .hamburger {
-            display: none;
-            font-size: 1.5em;
-            cursor: pointer;
-        }
-
-        @media (max-width: 768px) {
-            .navbar .menu {
-                display: none;
-                flex-direction: column;
-                background-color: #333;
-                position: absolute;
-                top: 60px;
-                right: 20px;
-                padding: 10px;
-                border-radius: 5px;
-            }
-
-            .navbar .hamburger {
-                display: block;
-            }
-
-            .navbar.active .menu {
-                display: flex;
-            }
-        }
-
-        header {
-            margin-top: 60px;
-            text-align: center;
-            padding: 20px;
-        }
-
-        header .headline h1, header .headline h2 {
-            margin: 10px 0;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #333;
-            color: white;
-            margin-top: 20px;
-        }
-
-        footer a {
-            color: limegreen;
-        }
-    </style>
 </head>
 <body id="home">
     <nav class="navbar">
@@ -135,32 +42,100 @@
 
     <header>
         <div class="headline">
-            <h1>Guido's Los Angeles</h1>
-            <h2>Your home away from home</h2>
-            <img src="images/Home.JPG" alt="Your Home Away From Home">
+           <img src="images/Home.JPG" alt="Your Home Away From Home">
         </div>
     </header>
 
     <main>
-        <section class="where-to-find-us">
-            <h2>WHERE TO FIND US</h2>
-            <p>11980 Santa Monica Blvd</p>
-            <p>Santa Monica, CA 90025</p>
+        <section id="address">
+            <div>
+                <article class="where-to-find-us">
+                    <h2>Where to find us?</h2>
+                    <p>11980 Santa Monica Blvd <br>Los Angeles, CA 90025</p>
+                </article>
+                <article class="schedules">
+                    <h3>Our Schedules</h3>
+                    <ul>
+                        <li>Lunch Mon-Fri 11:30am-2:30pm</li>
+                        <li>Dinner Sun-Thurs 5pm-10pm</li>
+                        <li>Dinner Fri-Sat 5pm-10:30pm</li>
+                    </ul>
+                </article>
+                <article class="schedules">
+                    <h3>Parties Info</h3>
+                    <ul>
+                        <li>Phone : (310) 820 - 6649</li>
+                        <li>Please email</li>
+                        <li> guidoslareservations@gmail.com</li>
+                    </ul>
+                </article>
+            </div>
+            <div class="map">
+                <img src="images/Map.JPG" alt="Map">
+            </div>
         </section>
-        <img src="images/Map.JPG" alt="Map">
-
-        <section class="our-schedule">
-            <h2>Our Schedule</h2>
-            <p>Lunch Mon-Fri 11:30am - 2:30pm</p>
-            <p>Dinner Sun-Thurs 5pm - 10pm</p>
-            <p>Dinner Fri-Sat 5pm - 10:30pm</p>
+        <section id="reserv">
+            <img src="images/MakeAReservation.JPG" alt="">
         </section>
+        <section id="about">
+            <div>
+                <h2>about us</h2>
+                <p>Guido's Restaurant, in West LA, has been serving up authentic Northern Italian cuisine incorporating the freshest ingredients and traditional family-style recipes passed on from generation to generation.</p>
+                <img src="images/Aboutus.JPG" alt="">
+                <button>Read More</button>
+            </div> 
+        </section>
+        <section id="menu">
+            <h2>menu</h2>
+            <div>
+                <article>
+                    <h3>Feta Brucheta</h3>
+                    <img src="images/FetaBruschetta.JPG" alt="">
+                    <p>Incredible, authentic, italian brucheta - the best appetizer for your meal. Winner of the 2021 LA Taste Award.</p>
+                </article>
+                <article>
+                    <h3>Our Famous Pizza</h3>
+                    <img src="images/OurFamousPizza.JPG" alt="">
+                    <p>Premium pizza dough, our family recipe pizza sauce, and the freshest ingredients make for one incredible pizza.</p>
+                </article>
+                <article>
+                    <h3>Handmade Pasta</h3>
+                    <img src="images/HomeMadePasta.JPG" alt="">
+                    <p>Hands down the highest quality pasta available in LA. Made from scratch daily for guaranteed taste perfection.</p>
+                </article>
+            </div>
+            <button>See More</button>
+        </section>
+        <section id="mail">
+            <div>
+                <h3>Join our mailing list</h3>
+                <p>Receive all updates about events, discounts and new suggested flavors available on our menu via email.</p>
+            
+            </div>
+            <textarea name="search" id="Enterthefoooditem"></textarea>
+        </section> 
     </main>
-
     <footer>
+        <nav id="footer">
+            <ul>
+                <li><a href="pages/menu.html">Menu</a></li>
+                <li><a href="#">Order</a></li>
+                <li><a href="#">Reservations</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div>
+            <h6>Connect with us!</h6>
+            <p>Copyright @ 2024. Guido's LA | All rights reserved. Polices</p>
+        </div>
+    </footer>
+
+    <!-- <footer>
         <p>Copyright &copy; 2024 Guido’s LA | All rights reserved. <a href="#">Policies</a></p>
         <p>Connect with us!</p>
-    </footer>
+    </footer> -->
 
     <script>
         function toggleMenu() {
