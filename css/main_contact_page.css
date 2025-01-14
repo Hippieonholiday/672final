@@ -1,0 +1,444 @@
+﻿html{font: 10px Verdana, sans-serif;}
+
+@font-face {
+    font-family: 'Devasia Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Devasia Regular'), url('../fonts/Devasia-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Perpetua Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Perpetua Regular'), url('../fonts/Perpetua-Regular.ttf') format('woff');
+}
+
+#contactPage h1{
+    font-family: Devasia Regular;
+    font-size: 6em;
+}
+
+#contactPage h2{font-size: 2.8em;}
+
+#contactPage h3{font-size: 1.5em;}
+
+#contactPage p{
+    font-size: 1.4em;
+}
+
+/************* Navigation bar *************/
+
+.logo{
+    width: 127px;
+    height: auto;
+    margin: 10px 20px;
+}
+
+nav, footer{
+    color: #f4f1ec;
+    background-image: url(../images/menu_red_leather_texture.jpg);
+    background-repeat: no-repeat;
+}
+
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+.navBar ul.menu{
+    font-size: 1.5em;
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 80px;
+}
+
+.navBar li{
+    color: #f4f1ec;
+    background-color: #842D2A;
+    text-align: center;
+    border-bottom: solid 1px #f4f1ec;
+}
+
+.navBar li:first-child{
+    border-top: solid 1px #f4f1ec;
+}
+
+.navBar a{
+    display: block;
+    padding: .6em;
+    color: #f4f1ec;
+    text-decoration: none;
+}
+
+.navBar a:hover{
+    background-color: #f4f1ec;
+    color: #842D2A;
+}
+
+.menuBar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fa-solid{
+    font-size: 30px;
+}
+
+/************* Hamburguer Menu *************/
+.showMenu{
+    background-color: transparent;
+    color: #f4f1ec;
+    text-align: right;
+    padding: .3em .7em .3em .3em;
+    display: block;
+    cursor: pointer;
+    font-size: 1.8rem;
+    height: 40px;
+    margin-right: 20px;
+}
+
+
+/************* Sub-menu *************/
+.has-submenu {
+    position: relative;
+  }
+  
+  /* Hide the submenu by default */
+  .submenu {
+    display: none;
+    background-color: #842D2A;
+  }
+  
+  .submenu li {
+    background-color: #a95754;
+  }
+
+  /* The label that show the submenu on mobile */
+  .has-submenu > a {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .showSubmenu {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.6rem;
+  }
+  
+  /* Hide the sub-menu checkbox itself */
+  .has-submenu input[type="checkbox"] {
+    display: none;
+  }
+  
+  /* When the sub-menu checkbox is checked, show the submenu */
+  .has-submenu input[type="checkbox"]:checked ~ .submenu {
+    display: block;
+  }
+
+.fa-chevron-down{
+    font-size: 1.6rem;
+}
+
+
+/* What makes the checkbox work */
+.navBar input[type=checkbox]:checked ~ ul.menu{
+    display: block;
+}
+
+.navBar input[type=checkbox]{
+    display: none;
+}
+
+
+/************* Main *************/
+#contactPage main{
+    max-width: 1200px;
+    margin: 120px auto 70px auto;
+}
+
+#contactPage main h1{
+    text-align: center;
+    margin: 15px;
+}
+
+#contactPage main p{
+    max-width: 500px;
+    text-align: center;
+    line-height: 2;
+    margin-bottom: 40px;
+}
+
+.contactInfo{
+    justify-self: center;
+    padding: 5px;
+}
+
+
+/************* Form *************/
+.contactForm form {
+    min-width: 340px;
+    max-width: 580px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #f4f1ec;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.contactForm label {
+    font-family: Perpetua Regular;
+    display: block;
+    margin-bottom: 4px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.contactForm input,.contactForm select,.contactForm textarea,.contactForm button {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1.5em;
+}
+
+.contactForm textarea{
+    width: auto;
+    height: 200px;
+}
+
+.mailing-list{
+    display: flex;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.mailing-list input{
+    width: 50px;
+    margin-right: 10px;
+    align-self: flex-start;
+    accent-color: #842D2A;
+}
+
+.mailing-list label{
+    font-size: 1.8em;
+    font-weight: normal;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.submitContact {
+    width: 85%;
+    background-color: #842D2A;
+    color: #f4f1ec;
+    border: none;
+    cursor: pointer;
+    align-self: center;
+}
+
+.submitContact:hover {
+    background-color: #435718;
+    color: #f4f1ec;
+}
+
+
+
+/************* Footer *************/
+.menuFooter{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    padding: 30px;
+    row-gap: 2px;
+    font-size: 1.5em;
+    line-height: 1.9em;
+}
+
+.menuFooter a, .footerTerms a{
+    color: #f4f1ec;
+    text-decoration: none;
+}
+
+.menuFooter a:hover{
+    background-color: #f4f1ec;
+    color: #842D2A;
+    border-radius: 2px;
+}
+
+.footerSocial h3{
+    text-align: center;
+    padding: 20px 0 15px 0;
+    border-top: solid 1px #f4f1ec;
+}
+
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons .fa-brands{
+    font-size: 2.2em;
+    margin: 0 20px 15px 0;
+}
+
+.socialIcons a{
+    color: #f4f1ec;
+    text-decoration: none;
+}
+
+.footerTerms{
+    text-align: center;
+    font-size: 0.7em;
+    padding-bottom: 20px;
+}
+
+.footerTerms a{
+    font-size: 1.6em;
+}
+
+.footerTerms p{
+    margin-top: 10px;
+}
+
+
+/************* Media Queries - Intermediate screen *************/
+    @media (min-width: 800px) {
+        #contactPage h1{
+            font-size: 7em;
+        }
+        
+        #contactPage h3 {
+            font-size: 2em;
+        }
+        
+        .logo {
+            width: 150px;
+            height: auto;
+        }
+        
+        /***** remove hamburgue menu ****/
+        .showMenu{
+            display: none;
+        }
+
+        .navBar span, .fa-bars:before{
+            display: none;
+        }
+
+        /***** re-set menu for larger screen *****/
+        .navBar{
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        
+        .navBar ul.menu{
+            width: 600px;
+            display: flex;
+            justify-content: space-evenly;
+            position: unset;
+        }
+
+        .navBar li{
+            font-size: 1.2em;
+            background-color: transparent;
+            border: none!important;
+        }
+
+        .navBar a{
+            color: #f4f1ec;
+        }
+
+        .navBar a:hover{
+            background-color: #f4f1ec;
+            color: #842D2A;
+            border-radius: 2px;
+        }    
+                
+        /* Hide the showSubmenu icon and rely on hover instead */
+        .showSubmenu {
+            display: none;
+        }
+
+        /* Show sub-menu on hover */
+        .has-submenu:hover .submenu {
+            display: block;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            margin: 0;
+            z-index: 999;
+          }
+          
+          .submenu {
+            margin: 0;
+            padding: 0.5em 0;
+          }
+
+        .submenu li {
+            text-align: left;
+            background-color: #842D2A;
+            border: none;
+            padding: 0.5em 1em;
+            border-bottom: 1px solid #f4f1ec;
+            font-size: 0.8em;
+        }
+
+        .submenu li:last-child {
+        border-bottom: none;
+        }
+
+        .submenu a {
+        padding: 0;
+        }
+
+        .submenu a:hover {
+        background-color: #f4f1ec;
+        color: #842D2A;
+        }
+
+        
+        /***** Footer *****/
+        .menuFooter{
+            display: flex;
+            justify-content: space-evenly;
+            font-size: 1.8em;
+            max-width: 1000px;
+            margin-left:auto;
+            margin-right: auto;
+        }
+        
+        .socialIcons .fa-brands{
+            font-size: 3em;
+            margin: 0 25px 20px 25px;
+        }
+        
+        .footerTerms{
+            display: flex;
+            justify-content: center;
+            flex-direction: row-reverse;
+            gap: 3em;
+            font-size: 1em;
+            padding-bottom: 25px;
+        }
+        
+        .footerTerms p{
+            font-size: 1.6em;
+            margin: 0;
+        }
+    }
+
+/************* Media Queries - Large screen *************/
+@media (min-width: 1200px) {
+        .logo {
+            width: 200px;
+            height: auto;
+        }
+}
