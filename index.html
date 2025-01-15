@@ -1,48 +1,81 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guido's LA Restaurant</title>
 
-    <!-- Icon -->
-    <link rel="icon" href="images/GuidosLosAngeles.JPG" type="image/x-icon">  
-
-    <!-- Google Fonts -->
+    <!-- google fonts & icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Montserrat:ital,wght@0,400;0,900;1,400;1,900&display=swap" rel="stylesheet">
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet"> -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome CDN -->
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="css/main.css">
-
+    <link
+        href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Montserrat:ital,wght@0,400;0,900;1,400;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet"
+        type="text/css">
+    
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="./css/reset.css" type="text/css">
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
 </head>
+
 <body id="home">
-    <nav class="navbar">
-        <div class="logo">
-            <img src="images/GuidosLosAngeles.JPG" alt="Guido's Los Angeles">
-        </div>
-        <div class="menu">
-            <a href="pages/menu.html">Menu</a>
-            <a href="pages/order.html">Order</a>
-            <a href="pages/reservations.html">Reservations</a>
-            <a href="pages/event.html">Events</a>
-            <a href="pages/About.html">About Us</a>
-            <a href="pages/contact.html">Contact</a>
-        </div>
-        <div class="hamburger" onclick="toggleMenu()">
-            <i class="fas fa-bars"></i>
-        </div>
+    <!-- Header Nav -->
+    <nav class="navBar">
+        <a href="./index.html">
+            <img class="logo" src="./images/Logo_White.png" alt="logo">
+        </a>
+
+        <input type="checkbox" id="showMenu">
+        <label for="showMenu" class="showMenu">
+            <span class="fa-solid fa-bars"></span>
+        </label>
+
+        <ul class="menu">
+            <li><a href="./pages/menu.html">Menu</a></li>
+            <li><a href="./pages/reservations.html">Reservations</a></li>
+          
+            <li class="has-submenu">
+                <a href="./pages/events.html">Events</a>
+                    <input type="checkbox" id="showSubmenu-Events" />
+                <label for="showSubmenu-Events" class="showSubmenu">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </label>
+                <ul class="submenu">
+                     <li><a href="./pages/catering.html">Catering</a></li>
+                </ul>
+            </li>
+  
+            <li class="has-submenu">
+                <a href="./pages/aboutUs.html">About Us</a>
+                    <input type="checkbox" id="showSubmenu-About" />
+                <label for="showSubmenu-About" class="showSubmenu">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </label>
+                <ul class="submenu">
+                    <li><a href="./pages/gallery.html">Gallery</a></li>
+                </ul>
+            </li>
+          
+            <li class="has-submenu">
+                <a href="./pages/contact.html">Contact</a>
+                    <input type="checkbox" id="showSubmenu-Contact" />
+                <label for="showSubmenu-Contact" class="showSubmenu">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </label>
+                <ul class="submenu">
+                    <li><a href="./pages/mapAndDirections.html">Map and Directions</a></li>
+                </ul>
+            </li>
+        </ul>
     </nav>
 
+    <!-- Main -->
     <header>
         <div class="headline">
-           <img src="images/Home.JPG" alt="Your Home Away From Home">
+           <img src="./images/Home.JPG" alt="Your Home Away From Home">
         </div>
     </header>
 
@@ -71,17 +104,17 @@
                 </article>
             </div>
             <div class="map">
-                <img src="images/Map.JPG" alt="Map">
+                <img src="./images/Map.png" alt="Map">
             </div>
         </section>
         <section id="reserv">
-            <img src="images/MakeAReservation.JPG" alt="">
+            <img src="./images/MakeAReservation.JPG" alt="">
         </section>
         <section id="about">
             <div>
                 <h2>about us</h2>
                 <p>Guido's Restaurant, in West LA, has been serving up authentic Northern Italian cuisine incorporating the freshest ingredients and traditional family-style recipes passed on from generation to generation.</p>
-                <img src="images/Aboutus.JPG" alt="">
+                <img src="./images/Aboutus.JPG" alt="">
                 <button>Read More</button>
             </div> 
         </section>
@@ -90,17 +123,17 @@
             <div>
                 <article>
                     <h3>Feta Brucheta</h3>
-                    <img src="images/FetaBruschetta.JPG" alt="">
+                    <img src="./images/FetaBruschetta.JPG" alt="">
                     <p>Incredible, authentic, italian brucheta - the best appetizer for your meal. Winner of the 2021 LA Taste Award.</p>
                 </article>
                 <article>
                     <h3>Our Famous Pizza</h3>
-                    <img src="images/OurFamousPizza.JPG" alt="">
+                    <img src="./images/OurFamousPizza.JPG" alt="">
                     <p>Premium pizza dough, our family recipe pizza sauce, and the freshest ingredients make for one incredible pizza.</p>
                 </article>
                 <article>
                     <h3>Handmade Pasta</h3>
-                    <img src="images/HomeMadePasta.JPG" alt="">
+                    <img src="./images/HomeMadePasta.JPG" alt="">
                     <p>Hands down the highest quality pasta available in LA. Made from scratch daily for guaranteed taste perfection.</p>
                 </article>
             </div>
@@ -114,33 +147,39 @@
             </div>
             <textarea name="search" id="Enterthefoooditem"></textarea>
         </section> 
+
+        <script>
+            function toggleMenu() {
+                document.querySelector('.navbar').classList.toggle('active');
+            }
+        </script>
     </main>
+
+    <!-- Footer-->
     <footer>
-        <nav id="footer">
-            <ul>
-                <li><a href="pages/menu.html">Menu</a></li>
-                <li><a href="#">Order</a></li>
-                <li><a href="#">Reservations</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Contact</a></li>
+        <nav class="navFooter">
+            <ul class="menuFooter">
+                <li><a href="./pages/menu.html">Menu</a></li>
+                <li><a href="./pages/reservations.html">Reservations</a></li>
+                <li><a href="./pages/events.html">Events</a></li>
+                <li><a href="./pages/aboutUs.html">About us</a></li>
+                <li><a href="./pages/contact.html">Contact</a></li>
             </ul>
         </nav>
-        <div>
-            <h6>Connect with us!</h6>
-            <p>Copyright @ 2024. Guido's LA | All rights reserved. Polices</p>
-        </div>
+
+        <section class="footerSocial">
+            <h3>Connect with us!</h3>
+            <section class="socialIcons">
+                <a href="https://www.instagram.com/guidosla/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/guidoslosangeles/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://x.com/GuidosWLA/"><i class="fa-brands fa-square-x-twitter"></i></a>
+            </section>
+        </section>
+
+        <section class="footerTerms">
+            <a href="./pages/policies.html">Policies</a>
+            <p>Copyright &copy; 2024 Guido’s LA | All rights reserved.</p>
+        </section>
     </footer>
-
-    <!-- <footer>
-        <p>Copyright &copy; 2024 Guido’s LA | All rights reserved. <a href="#">Policies</a></p>
-        <p>Connect with us!</p>
-    </footer> -->
-
-    <script>
-        function toggleMenu() {
-            document.querySelector('.navbar').classList.toggle('active');
-        }
-    </script>
 </body>
 </html>

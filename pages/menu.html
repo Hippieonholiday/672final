@@ -1,42 +1,84 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Menu</title>
-  <link rel="stylesheet" href="../css/reset.css" type="text/css">   
-  <!-- google font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Montserrat:ital,wght@0,400;0,900;1,400;1,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/main.css" type="text/css">   
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guido's - Menu</title>
+
+    <!-- google fonts & icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Montserrat:ital,wght@0,400;0,900;1,400;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet"
+        type="text/css">
+    
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="../css/reset.css" type="text/css">
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
 </head>
 
-<body id="menu">
-    <nav class="navbar">
-        <div class="logo">
-            <img src="../images/GuidosLosAngeles.JPG" alt="Guido's Los Angeles">
-        </div>
-        <div class="menu">
-            <a href="pages/menu.html">Menu</a>
-            <a href="pages/order.html">Order</a>
-            <a href="pages/reservations.html">Reservations</a>
-            <a href="pages/event.html">Events</a>
-            <a href="pages/About.html">About Us</a>
-            <a href="pages/contact.html">Contact</a>
-        </div>
-        <div class="hamburger" onclick="toggleMenu()">
-            <i class="fas fa-bars"></i>
-        </div>
+<body id="menuPage">
+    <!-- Header Nav -->
+    <nav class="navBar">
+        <a href="../index.html">
+            <img class="logo" src="../images/Logo_White.png" alt="logo">
+        </a>
+
+        <input type="checkbox" id="showMenu">
+        <label for="showMenu" class="showMenu">
+            <span class="fa-solid fa-bars"></span>
+        </label>
+
+        <ul class="menu">
+            <li><a href="./menu.html">Menu</a></li>
+            <li><a href="./reservations.html">Reservations</a></li>
+          
+            <li class="has-submenu">
+                <a href="./events.html">Events</a>
+                    <input type="checkbox" id="showSubmenu-Events" />
+                <label for="showSubmenu-Events" class="showSubmenu">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </label>
+                <ul class="submenu">
+                     <li><a href="./catering.html">Catering</a></li>
+                </ul>
+            </li>
+  
+            <li class="has-submenu">
+                <a href="./aboutUs.html">About Us</a>
+                    <input type="checkbox" id="showSubmenu-About" />
+                <label for="showSubmenu-About" class="showSubmenu">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </label>
+                <ul class="submenu">
+                    <li><a href="./gallery.html">Gallery</a></li>
+                </ul>
+            </li>
+          
+            <li class="has-submenu">
+                <a href="./contact.html">Contact</a>
+                    <input type="checkbox" id="showSubmenu-Contact" />
+                <label for="showSubmenu-Contact" class="showSubmenu">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </label>
+                <ul class="submenu">
+                    <li><a href="./mapAndDirections.html">Map and Directions</a></li>
+                </ul>
+            </li>
+        </ul>
     </nav>
 
+    <!-- Main -->     
     <header>
         <div class="headline">
            <!-- <img src="../images/Home.JPG" alt="Your Home Away From Home"> -->
         </div>
     </header>
-  
+    
     <main id="menupage">
         <h2>Menu</h2>
         <ul class="foodlist">
@@ -369,20 +411,31 @@
        
     </main>
 
+    <!-- Footer-->
     <footer>
-        <nav>
-            <ul>
-                <li><a href="pages/menu.html">Menu</a></li>
-                <li><a href="#">Order</a></li>
-                <li><a href="#">Reservations</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Contact</a></li>
+        <nav class="navFooter">
+            <ul class="menuFooter">
+                <li><a href="./menu.html">Menu</a></li>
+                <li><a href="./reservations.html">Reservations</a></li>
+                <li><a href="./events.html">Events</a></li>
+                <li><a href="./aboutUs.html">About us</a></li>
+                <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
-        <div>
-            <h6>Connect with us!</h6>
-            <p>Copyright @ 2024. Guido's LA | All rights reserved. Policies</p>
-        </div>
+
+        <section class="footerSocial">
+            <h3>Connect with us!</h3>
+            <section class="socialIcons">
+                <a href="https://www.instagram.com/guidosla/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/guidoslosangeles/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://x.com/GuidosWLA/"><i class="fa-brands fa-square-x-twitter"></i></a>
+            </section>
+        </section>
+
+        <section class="footerTerms">
+            <a href="./policies.html">Policies</a>
+            <p>Copyright &copy; 2024 Guido’s LA | All rights reserved.</p>
+        </section>
     </footer>
+</body>
 </html>
