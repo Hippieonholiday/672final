@@ -1,70 +1,19 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Menu</title>
-  <!----fontawsomelibraries-->
-  <script
-  src="https://code.jquery.com/jquery-3.7.1.min.js"
-  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-  crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="../css/reset.css" type="text/css">   
   <!-- google font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Montserrat:ital,wght@0,400;0,900;1,400;1,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/main.css" type="text/css"> 
-    <script>
-    $(document).ready(function(){
-        $('#s').click(function(){
-            $('.chef-suggestion').show();
-            $('.antipasti').show();
-            $('.zuppe').show();
-            $('.insalate').show();
-            $('.paste').hide();
-            $('.pesce').hide();
-            $('.carne').hide();
-            $('.polli').hide();
-            $('.vegetatiano').hide();
-            $('.sides').hide();
-            $('.sauteed-spinach').hide();
-        })
-    })
-    $(document).ready(function(){
-        $('#e').click(function(){
-            $('.chef-suggestion').show();
-            $('.antipasti').hide();
-            $('.zuppe').hide();
-            $('.insalate').hide();
-            $('.paste').show();
-            $('.pesce').show();
-            $('.carne').show();
-            $('.polli').show();
-            $('.vegetatiano').hide();
-            $('.sides').hide();
-            $('.sauteed-spinach').hide();
-        })
-    })
-    $(document).ready(function(){
-        $('#t').click(function(){
-            $('.chef-suggestion').show();
-            $('.antipasti').hide();
-            $('.zuppe').hide();
-            $('.insalate').hide();
-            $('.paste').hide();
-            $('.pesce').hide();
-            $('.carne').hide();
-            $('.polli').hide();
-            $('.vegetatiano').show();
-            $('.sides').show();
-            $('.sauteed-spinach').show();
-        })
-    })
-  </script>  
+  <link rel="stylesheet" href="../css/main.css" type="text/css">   
 </head>
+
 <body id="home">
     <nav class="navbar">
         <div class="logo">
@@ -82,24 +31,26 @@
             <i class="fas fa-bars"></i>
         </div>
     </nav>
+
     <header>
         <div class="headline">
            <!-- <img src="../images/Home.JPG" alt="Your Home Away From Home"> -->
         </div>
     </header>
+    
     <main id="menupage">
         <h2>Menu</h2>
-        <div class="foodcat">
-            <section>
-                <h3><a href="" id="s">Starters</a></h3>
-            </section>
-            <section>
-                <h3><a href="">Entrees</a></h3>
-            </section>
-            <section>
-                <h3><a href="">Sides and Veggie</a></h3>
-            </section>
-        </div>
+        <ul class="foodlist">
+            <li><a href="">Antipasti</a></li>
+            <li><a href="">Zuppe</a></li>
+            <li><a href="">Insalate</a></li>
+            <li><a href="">Vegetariano</a></li>
+            <li><a href="">Paste</a></li>
+            <li><a href="">Pesce</a></li>
+            <li><a href="">Carne</a></li>
+            <li><a href="">Polli</a></li>
+            <li><a href="">Sides</a></li>
+        </ul>
         <div class="fooditem">
                 <section class="chef-suggestion">
                     <h3>chef's suggestion</h3>
@@ -423,28 +374,37 @@
                 <h4>Join our mailing list</h4>
                 <p>Receive all updates about events, discounts and new suggested flavors available on our menu via email.</p>   
             </div>
-            <div class="search-container">
-                <i class="fa-solid fa-play"></i>
-                <!-- <input type="text" placeholder="" class="input-field"> -->
-            </div>  
-             
-
-        </section>           
+            <textarea name="" id=""></textarea>
+        </section> 
+    
+   
+       
     </main>
+
     <footer>
-        <nav>
-            <ul>
-                <li><a href="pages/menu.html">Menu</a></li>
-                <li><a href="#">Order</a></li>
-                <li><a href="#">Reservations</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Contact</a></li>
+        <nav class="navFooter">
+            <ul class="menuFooter">
+                <li><a href="./menu.html">Menu</a></li>
+                <li><a href="./reservations.html">Reservations</a></li>
+                <li><a href="./events.html">Events</a></li>
+                <li><a href="./aboutUs.html">About us</a></li>
+                <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
-        <div>
-            <h6>Connect with us!</h6>
-            <p>Copyright @ 2024. Guido's LA | All rights reserved. Polices</p>
-        </div>
+
+        <section class="footerSocial">
+            <h3>Connect with us!</h3>
+            <section class="socialIcons">
+                <a href="https://www.instagram.com/guidosla/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/guidoslosangeles/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://x.com/GuidosWLA/"><i class="fa-brands fa-square-x-twitter"></i></a>
+            </section>
+        </section>
+
+        <section class="footerTerms">
+            <a href="./policies.html">Policies</a>
+            <p>Copyright &copy; 2024 Guido’s LA | All rights reserved.</p>
+        </section>
     </footer>
+</body>
 </html>
