@@ -1,11 +1,11 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guido's - Contact</title>
+    <title>Guido's - Map and Directions</title>
     <link rel="stylesheet" href="../css/reset.css" type="text/css">
 
     <!-- google font -->
@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="../css/main_contact_page.css" type="text/css">
 </head>
 
-<body id="contactPage">
+<body id="MDPage">
     <nav class="navBar">
         <a href="../index.html">
             <img class="logo" src="../images/Logo_White.png" alt="logo">
@@ -74,48 +74,75 @@
             </li>
         </ul>
     </nav>
+    
+    <main>       
+        <!-- Map and Directions -->
+        <section class="MDInfo">
+            <h1>Map and Directions</h1>
+        </section>
+       
+        <section class="MDcontainer">
+            <aside class="column">
+               <article class="columnLeftContent">
+                    <h2>Hours & Location</h2>
 
-    <main>
-        <!-- Contact -->
-        <section class="contactInfo">
-            <h1>Contact Us</h1>
-            <p>Send us a message and We'll get back to you as soon as possible. You can also reach us by phone at
-                (310)820-6649. Looking forward to hearing from you.</p>
+                    <p>11980 Santa Monica Blvd</p>
+                    <p>Los Angeles, CA 90025</p>
+
+                    <h3>Our Schedules</h3>
+                    <p>Lunch Mon-Fri 11:30am-2:30pm</p>
+                    <p>Dinner Sun-Thurs 5pm-10pm</p>
+                    <p>Dinner Fri-Sat 5pm-10:30pm</p>
+
+                    <h3>Parties Info</h3>
+                    <p>Phone: (310) 820-6649</p>
+                    <p>Email: <a href="mailto:guidoslareservations@gmail.com">guidoslareservations@gmail.com</a></p>
+                
+                    <section class="map">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3301.6457713168196!2d-118.4554791!3d34.0418494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bac62a5eb73d%3A0x2c84b7b7f5b2c0b4!2s11980%20Santa%20Monica%20Blvd%2C%20Los%20Angeles%2C%20CA%2090025%2C%20USA!5e0!3m2!1sen!2sus!4v1697033188341!5m2!1sen!2sus" 
+                            allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </section>
+                </article>
+            </aside>
+            
+            
+
+            <aside class="column">
+                <article class="columnRightContent">
+                    <h2>Directions</h2>
+                    <h3>Coming from Downtown Los Angeles (East)</h3>
+                    <ul>
+                        <li>Take the I-10 West toward Santa Monica.</li>
+                        <li>Exit at Bundy Drive North and continue to Santa Monica Boulevard.</li>
+                        <li>Turn right onto Santa Monica Boulevard; the restaurant will be on your left.</li>
+                    </ul>
+
+                    <h3>Coming from Santa Monica (West)</h3>
+                    <ul>
+                        <li>Take the I-10 East toward Los Angeles.</li>
+                        <li>Exit at Bundy Drive North and continue to Santa Monica Boulevard.</li>
+                        <li>Turn right onto Santa Monica Boulevard; the restaurant will be on your left.</li>
+                    </ul>
+
+                    <h3>Coming from Beverly Hills (Northeast)</h3>
+                    <ul>
+                        <li>Take Santa Monica Boulevard heading west.</li>
+                        <li>Continue on Santa Monica Boulevard to 11980; the restaurant will be on your right.</li>
+                    </ul>
+
+                    <h3>Coming from Culver City (Southeast)</h3>
+                    <ul>
+                        <li>Take the I-405 North toward Santa Monica.</li>
+                        <li>Exit at Santa Monica Boulevard and turn left.</li>
+                        <li>Continue on Santa Monica Boulevard to 11980; the restaurant will be on your left.</li>
+                    </ul>
+                </article>
+            </aside>
+            
         </section>
 
-        <section class="contactForm">
-            <form action="#" method="post" enctype="text/plain">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name" required>
-
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
-
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
-
-                <label for="reason">What are you getting in touch about?</label>
-                <select id="reason" name="reason" required>
-                    <option value="">--Please choose an option--</option>
-                    <option value="reservation">Reservation</option>
-                    <option value="events">Events</option>
-                    <option value="catering">Catering</option>
-                    <option value="other">Other</option>
-                </select>
-
-                <label for="message">Your Message</label>
-                <textarea id="message" name="message" rows="5" placeholder="Write your message here"
-                    required></textarea>
-
-                <section class="mailing-list">
-                    <input type="checkbox" id="mailing-list" name="mailing-list">
-                    <label for="mailing-list">Join our mailing list, and receive updates about events, discounts, and
-                        new suggested flavors available on our menu via email.</label>
-                </section>
-
-                <button class="submitContact" type="submit">Send</button>
-            </form>
-        </section>
     </main>
 
     <footer>

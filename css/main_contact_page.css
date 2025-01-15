@@ -11,21 +11,10 @@
     font-family: 'Perpetua Regular';
     font-style: normal;
     font-weight: normal;
-    src: local('Perpetua Regular'), url('../fonts/Perpetua-Regular.ttf') format('woff');
+    src: local('Perpetua Regular'), url('../fonts/Perpetua-Regular.ttf') format('ttf');
 }
 
-#contactPage h1{
-    font-family: Devasia Regular;
-    font-size: 6em;
-}
 
-#contactPage h2{font-size: 2.8em;}
-
-#contactPage h3{font-size: 1.5em;}
-
-#contactPage p{
-    font-size: 1.4em;
-}
 
 /************* Navigation bar *************/
 
@@ -76,7 +65,7 @@ nav, footer{
     text-decoration: none;
 }
 
-.navBar a:hover{
+.menu a:hover{
     background-color: #f4f1ec;
     color: #842D2A;
 }
@@ -108,39 +97,39 @@ nav, footer{
 /************* Sub-menu *************/
 .has-submenu {
     position: relative;
-  }
-  
-  /* Hide the submenu by default */
-  .submenu {
+}
+ 
+/* Hide the submenu by default */
+.submenu {
     display: none;
     background-color: #842D2A;
-  }
+}
   
-  .submenu li {
+.submenu li {
     background-color: #a95754;
-  }
+ }
 
-  /* The label that show the submenu on mobile */
-  .has-submenu > a {
+/* The label that show the submenu on mobile */
+.has-submenu > a {
     display: inline-block;
     vertical-align: middle;
-  }
+}
   
-  .showSubmenu {
+.showSubmenu {
     display: inline-block;
     vertical-align: middle;
     font-size: 1.6rem;
-  }
+}
   
-  /* Hide the sub-menu checkbox itself */
-  .has-submenu input[type="checkbox"] {
+/* Hide the sub-menu checkbox itself */
+.has-submenu input[type="checkbox"] {
     display: none;
-  }
+}
   
-  /* When the sub-menu checkbox is checked, show the submenu */
-  .has-submenu input[type="checkbox"]:checked ~ .submenu {
+/* When the sub-menu checkbox is checked, show the submenu */
+.has-submenu input[type="checkbox"]:checked ~ .submenu {
     display: block;
-  }
+}
 
 .fa-chevron-down{
     font-size: 1.6rem;
@@ -154,99 +143,6 @@ nav, footer{
 
 .navBar input[type=checkbox]{
     display: none;
-}
-
-
-/************* Main *************/
-#contactPage main{
-    max-width: 1200px;
-    margin: 120px auto 70px auto;
-}
-
-#contactPage main h1{
-    text-align: center;
-    margin: 15px;
-}
-
-#contactPage main p{
-    max-width: 500px;
-    text-align: center;
-    line-height: 2;
-    margin-bottom: 40px;
-}
-
-.contactInfo{
-    justify-self: center;
-    padding: 5px;
-}
-
-
-/************* Form *************/
-.contactForm form {
-    min-width: 340px;
-    max-width: 580px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 2px solid #f4f1ec;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-}
-
-.contactForm label {
-    font-family: Perpetua Regular;
-    display: block;
-    margin-bottom: 4px;
-    font-size: 2em;
-    font-weight: bold;
-}
-
-.contactForm input,.contactForm select,.contactForm textarea,.contactForm button {
-    padding: 15px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 1.5em;
-}
-
-.contactForm textarea{
-    width: auto;
-    height: 200px;
-}
-
-.mailing-list{
-    display: flex;
-    margin-bottom: 15px;
-    padding: 10px;
-}
-
-.mailing-list input{
-    width: 50px;
-    margin-right: 10px;
-    align-self: flex-start;
-    accent-color: #842D2A;
-}
-
-.mailing-list label{
-    font-size: 1.8em;
-    font-weight: normal;
-    line-height: 1.4;
-    margin: 0;
-}
-
-.submitContact {
-    width: 85%;
-    background-color: #842D2A;
-    color: #f4f1ec;
-    border: none;
-    cursor: pointer;
-    align-self: center;
-}
-
-.submitContact:hover {
-    background-color: #435718;
-    color: #f4f1ec;
 }
 
 
@@ -309,21 +205,210 @@ nav, footer{
 }
 
 
+
+
+/*////////////////////////////  CONTACT PAGE - START -  ////////////////////////////*/
+
+#contactPage h1{
+    font-family: 'Devasia Regular';
+    font-size: 6em;
+}
+
+#contactPage h2{font-size: 2.8em;}
+
+#contactPage h3{font-size: 1.5em;}
+
+#contactPage p{
+    font-size: 1.4em;
+}
+
+/************* Main *************/
+#contactPage main{
+    max-width: 1200px;
+    margin: 120px auto 70px auto;
+}
+
+#contactPage main h1{
+    text-align: center;
+    margin: 15px;
+}
+
+#contactPage main p{
+    max-width: 500px;
+    text-align: center;
+    line-height: 2em;
+    margin-bottom: 40px;
+}
+
+.contactInfo{
+    justify-self: center;
+    padding: 5px;
+}
+
+
+/************* Form *************/
+.contactForm form {
+    min-width: 340px;
+    max-width: 580px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #f4f1ec;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.contactForm label {
+    font-family: 'Perpetua Regular';
+    display: block;
+    margin-bottom: 4px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.contactForm input,.contactForm select,.contactForm textarea,.contactForm button {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1.5em;
+}
+
+.contactForm textarea{
+    width: auto;
+    height: 200px;
+}
+
+#contactPage .mailing-list{
+    display: flex;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+#contactPage .mailing-list input{
+    width: 50px;
+    margin-right: 10px;
+    align-self: flex-start;
+    accent-color: #842D2A;
+}
+
+#contactPage .mailing-list label{
+    font-size: 1.8em;
+    font-weight: normal;
+    line-height: 1.4;
+    margin: 0;
+}
+
+#contactPage .submitContact {
+    width: 85%;
+    background-color: #842D2A;
+    color: #f4f1ec;
+    border: none;
+    cursor: pointer;
+    align-self: center;
+}
+
+#contactPage .submitContact:hover {
+    background-color: #435718;
+    color: #f4f1ec;
+}
+
+
+/*//////////////////////////// MAP AND DIRECTIONS - START - ////////////////////////////*/
+
+#MDPage main {
+    max-width: 1200px;
+    margin: 120px auto 70px auto;
+}
+
+.MDInfo{
+    padding: 15px; 
+}
+
+#MDPage h1 {
+    font-family: 'Devasia Regular';
+    font-size: 7em;
+    text-align: center;
+    margin: 20px;
+}
+
+#MDPage .MDcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px auto;
+    max-width: 1200px;
+    gap: 10px;
+}
+
+#MDPage .column {
+    flex: 1;
+    min-width: 300px;
+    padding: 10px;
+}
+
+#MDPage .column h2{
+    font-family: 'Perpetua Regular';
+    font-weight: bold;
+    font-size: 3em;
+    color: #842D2A;
+    margin: 15px 0;
+    text-align: center;
+}
+
+#MDPage .column h3{
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+#MDPage .columnLeftContent, #MDPage .columnRightContent{
+    justify-items: center;
+}
+
+#MDPage .columnLeftContent h3{
+    margin-top: 30px;
+}
+
+#MDPage .column p, #MDPage .column li{
+    font-size: 1.4em;
+    line-height: 1.5em;
+}
+
+#MDPage ul {
+    list-style-position: inside;
+    margin-bottom: 30px;
+}
+
+#MDPage .columnRightContent ul li {
+    list-style-type: circle;
+    margin-bottom: 8px;
+}
+
+#MDPage .map {
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#MDPage iframe {
+    border: none;
+    width: 100%;
+    height: 400px;
+    max-width: 1200px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+
+
+
 /************* Media Queries - Intermediate screen *************/
     @media (min-width: 800px) {
-        #contactPage h1{
-            font-size: 7em;
-        }
-        
-        #contactPage h3 {
-            font-size: 2em;
-        }
-        
-        .logo {
-            width: 150px;
-            height: auto;
-        }
-        
+               
+/******************** Navegation bar *******************/
         /***** remove hamburgue menu ****/
         .showMenu{
             display: none;
@@ -352,11 +437,7 @@ nav, footer{
             border: none!important;
         }
 
-        .navBar a{
-            color: #f4f1ec;
-        }
-
-        .navBar a:hover{
+        .menu a:hover{
             background-color: #f4f1ec;
             color: #842D2A;
             border-radius: 2px;
@@ -375,16 +456,16 @@ nav, footer{
             left: 0;
             margin: 0;
             z-index: 999;
-          }
+         }
           
-          .submenu {
+         .submenu {
             margin: 0;
             padding: 0.5em 0;
-          }
+         }
 
         .submenu li {
             text-align: left;
-            background-color: #842D2A;
+            background-color: #a95754;
             border: none;
             padding: 0.5em 1em;
             border-bottom: 1px solid #f4f1ec;
@@ -392,16 +473,16 @@ nav, footer{
         }
 
         .submenu li:last-child {
-        border-bottom: none;
+            border-bottom: none;
         }
 
         .submenu a {
-        padding: 0;
+            padding: 0;
         }
 
         .submenu a:hover {
-        background-color: #f4f1ec;
-        color: #842D2A;
+            background-color: #f4f1ec;
+            color: #842D2A;
         }
 
         
@@ -433,12 +514,35 @@ nav, footer{
             font-size: 1.6em;
             margin: 0;
         }
-    }
+        
 
-/************* Media Queries - Large screen *************/
-@media (min-width: 1200px) {
+ /*//////// Contact Page ////////*/
+        #contactPage h1{
+            font-size: 7em;
+        }
+        
+        #contactPage h3 {
+            font-size: 2em;
+        }
+        
         .logo {
-            width: 200px;
+            width: 150px;
             height: auto;
         }
-}
+        
+        
+/*//////// Map and Directions Page ////////*/        
+        #MDPage .MDcontainer {
+            gap: 50px;
+        }
+        
+    }
+
+
+/************* Media Queries - Large screen *************/
+    @media (min-width: 1200px) {
+            .logo {
+                width: 200px;
+                height: auto;
+            }
+    }
