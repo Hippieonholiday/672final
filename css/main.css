@@ -7,7 +7,6 @@
 body {
 	font-family: Arial, sans-serif;
 }
-
 /* body { font: 1.5rem Verdana, Arial, sans-serif; } */
 /* body { font: 1.5rem;
 	   font-family: "Montserrat"; } */
@@ -33,12 +32,10 @@ html, body {
 	top: 4px;
 	left: 4px;
 }
-
 .logo img {
 	max-width: 30px;
 	max-height: 40px;
 }
-
 /*
 .headline {
 	display: flex;
@@ -63,9 +60,7 @@ html, body {
 } */
 /***********************
 nav
-******************/
-
-        
+******************/   
 .navbar {
 	display: flex;
 	align-items: center;
@@ -80,35 +75,29 @@ nav
 	height: 50px;
 	z-index: 1000;
 }
-
 .navbar .logo img {
 	height: 50px;
 }
-
 .navbar .menu {
 	display: flex;
 	gap: 20px;
 	margin-left: auto;
 	margin-right: 20px;
 }
-
 .navbar .menu a {
 	text-decoration: none;
 	color: white;
 	font-size: 1em;
 	transition: color 0.3s;
 }
-
 .navbar .menu a:hover {
 	color: limegreen;
 }
-
 .navbar .hamburger {
 	display: none;
 	font-size: 1.5em;
 	cursor: pointer;
 }
-
 @media (max-width: 768px) {
 	.navbar .menu {
 		display: none;
@@ -129,17 +118,14 @@ nav
 		display: flex;
 	}
 }
-
 header {
 	margin-top: 50px;
 	text-align: center;
 	/* padding: 20px; */
 }
-
 header .headline h1, header .headline h2 {
 	margin: 10px 0;
 }
-
 /* footer {
 	text-align: center;
 	padding: 20px;
@@ -147,11 +133,9 @@ header .headline h1, header .headline h2 {
 	color: white;
 	margin-top: 20px;
 } */
-
 footer a {
 	color: limegreen;
 }
-
 /* Hamburger Menu */
 .showMenu {
     display: block;
@@ -164,23 +148,18 @@ footer a {
     position: relative;
     z-index: 2;
 }
-
 .fa-bars {
 	font-size: 1.6rem;
 }
-
 nav input[type=checkbox]:checked ~ ul.menu {
 	display: block;
 }
-
 nav input[type=checkbox] {
 	display: none;
 }
-
 nav ul.menu {
 	display: none;
 }
-
 /*
 #tools header {
 	display: flex;
@@ -215,9 +194,7 @@ nav ul.menu {
 	margin-top: 1em;;
 }
 */
-
 .clearIt { clear:both; }
-
 nav {
 	background-color: #76dce5;
 	text-align: center;
@@ -238,7 +215,6 @@ nav a:hover {
 	background-color: #14818b;
 	color:rgb(2, 2, 53); 
 }
-
 /* begin code for table */
 td, th { 
 	padding: 6px;
@@ -248,19 +224,15 @@ td, th {
 	}
 tr:nth-of-type(even) { background: rgb(229, 246, 251);  }
 /* end of code for table */
-
 .table-image {
 	max-width: 150px;
 	max-height: 150px;
 	width: auto;
 	height: auto;
 }
-
-
 article:last-of-type {
 	border-bottom: none;
 }
-
 article h2 {
 	font-family: "Montserrat";
 	font-style: normal;
@@ -268,7 +240,6 @@ article h2 {
 	color: #14818b;
 	margin: .2em 0 .5em;
 }
-
 #home article img {
 	max-width: 100%;
 	max-height: 350px;
@@ -278,12 +249,11 @@ article h2 {
 	height: auto;
 	
 }
-
 /******************
 home-main
 
 *********************/
-#address, #about, #menu, #mail{
+#address, #about, #menu{
 	margin: auto 10%;
 }
 #address, #reserv, #about, #menu, #mail{
@@ -315,9 +285,7 @@ home-main
 	/* border:0.1rem solid #333; */
 	margin-top: 3rem;
 }
-#reserv {
-	width:100%
-}
+#reserv { 	width:100% }
 #about h2{
 	color: #435718;
 	text-align: center;
@@ -332,12 +300,15 @@ home-main
 #about img, #menu img{
 	margin: 2rem auto;
 }
-#about button, #menu button{
+#about .more, #menu .more{
 	background-color: #000;
 	color: #fff;
 	padding:1.5rem 5rem;
 	font-size: 2.5rem;
 	margin: auto 20%;
+}
+#menu .more{
+	background-color: #435718;
 }
 #menu h2{
 	text-align: center;
@@ -359,8 +330,11 @@ home-main
 	margin: auto 2.5rem;
 	line-height: 6rem;
 }
-#menu button{
-	background-color:  #435718;
+.Container {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	
 }
 #mail h3{
 	color: #435718;
@@ -369,7 +343,6 @@ home-main
 	text-transform: capitalize;
 	font-weight: 300;
 }
-
 #mail p{
 	font-size: 2rem;
 }
@@ -385,10 +358,26 @@ footer{
 	margin: 2rem auto;
 
 }
-
 /**********************
 MENU
 ************************/
+.foodcat h3{
+	font-size: 1.5rem;
+	
+}
+.foodcat {
+	display: flex;
+	flex-direction: column;
+	margin: 2rem 10%;
+	justify-content: space-between;
+	
+}
+.foodcat h3 a{
+	font-size: 2.5rem;
+	text-decoration: none;
+	color: #842D2A;
+	
+}
 #menupage .fooditem{
 	margin: auto 10%;
 	
@@ -425,9 +414,7 @@ MENU
 	font-size: 2rem;
 	font-weight: 600;
 }
-#menupage div section{
-	background-color:  #f4f1ec;
-}
+#menupage div section{	background-color:  #f4f1ec;}
 #menupage p{
 	font-size: 1.8rem;
 }
@@ -470,26 +457,66 @@ MENU
 	text-align: left;
 	text-transform: capitalize;
 }
+.price {
+	font-weight: 700;
+}
 #mail h4 {
 	font-size: 4rem;
 	color: #435718;
 	text-align: left;
-	margin: 2rem auto;
+	margin: 2rem 10%;
 }
-#mail textarea {
+.search-container .fa-solid input{
+	/* position: absolute;
+	padding: 10px; */
+	/* min-width: -40px; */
+    outline: none;
+	border: none;
+	padding-left: 20px;
+
+}
+.search-container .fa-solid i{
+	position: absolute;
+	top: 0;
+	right: 20px;
+	line-height: 60px;
+	cursor: pointer;
+}
+/* .search-container {
+	width: 400px;
+	max-width: 100%;
+	position: relative;
+
+}
+.search-container input {
+	background: white;
+	border-color: whitesmoke;
+	padding: 1.5rem 2rem;
+	width: 100%;
+}
+.search-container button {
+	background-color: white;
+	
+	border-color: whitesmoke;
+	 height: 95%; 
+	 aspect-ratio: 0.9; 
+	 position: absolute; 
+	 right: 0; 
+	
+} */
+
+/* #mail textarea {
 	display: block;
 	width: 100%;
-	margin: 3rem auto;
-}
-#mail p{
+	margin: 3rem auto; */
+/* } */
+
+#mail  div p{
+
 	text-align: left;
 	line-height: 3rem;
-}
-
 	
-
-
-
+}
 @media screen and (min-width: 600px) {
 	#home article img {
 		float: left;
@@ -525,19 +552,40 @@ home- main
 	width:1600px;
 	height: auto;
 }
+/***********
+  Menu Page
+************/
+.foodcat {flex-direction: row};
+
+.fooditem{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+.map{
+	display: flex;
+	flex-direction: column;
+}
+.map2{
+	display:flex;
+
+}
+#mail {
+	display:grid;
+	grid-template-columns: 2fr .95fr;
+	justify-content: center;
+	align-items: center;
+	background-color: #f4f1ec;
+	width: 100%;
+}
 /* #about div img{
 	float: left;
 } */
-#menu div{
-	display: flex;
-
+#mail div{
+	margin: auto 100px;
 }
-#mail{
-	display: flex;
-}
-
-
-
+/* #mail .mailinglist h4 {
+	padding: auto 50%;
+} */
 #footer ul{
 	display: flex;
 	/* grid-template-columns: repeat(2, 1fr); */
@@ -547,7 +595,6 @@ home- main
 	margin: 2rem auto;
 
 }
-
 /* Contact */
     .contact {
         max-width: 600px;

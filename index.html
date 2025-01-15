@@ -8,7 +8,8 @@
 
     <!-- Icon -->
     <link rel="icon" href="images/GuidosLosAngeles.JPG" type="image/x-icon">  
-
+    <!----fontawsomelibraries-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -82,7 +83,7 @@
                 <h2>about us</h2>
                 <p>Guido's Restaurant, in West LA, has been serving up authentic Northern Italian cuisine incorporating the freshest ingredients and traditional family-style recipes passed on from generation to generation.</p>
                 <img src="images/Aboutus.JPG" alt="">
-                <button>Read More</button>
+                <button class="more">Read More</button>
             </div> 
         </section>
         <section id="menu">
@@ -104,7 +105,9 @@
                     <p>Hands down the highest quality pasta available in LA. Made from scratch daily for guaranteed taste perfection.</p>
                 </article>
             </div>
-            <button>See More</button>
+            <div class="Container">
+            <button class="more">See More</button>
+            </div>
         </section>
         <section id="mail">
             <div>
@@ -112,7 +115,10 @@
                 <p>Receive all updates about events, discounts and new suggested flavors available on our menu via email.</p>
             
             </div>
-            <textarea name="search" id="Enterthefoooditem"></textarea>
+             <div class="search-container">
+                <input type="text" placeholder="" >
+            </div> 
+            
         </section> 
     </main>
     <footer>
