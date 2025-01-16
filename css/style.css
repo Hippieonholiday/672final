@@ -1,4 +1,4 @@
-﻿/*//////////////  Old/Unorganized CSS - START - (Current CSS on 239)  //////////////*/
+﻿/*//////////////  Old/Unorganized CSS - START - (Current CSS on 217)  //////////////*/
 
 #home img {
 	max-width: 100%;
@@ -417,6 +417,9 @@ nav, footer{
 
 
 /*////////////////////////////  Home Page  ////////////////////////////*/
+#home main{
+    margin-top: 10rem;
+}
 #address, #about, #menu, #mail{
 	margin: auto 10%;
 }
@@ -509,26 +512,29 @@ nav, footer{
 
 
 /*////////////////////////////  Menu Page  ////////////////////////////*/
-#menupage .fooditem{
+#menuPage main{
+    margin-top: 15rem;
+}
+.menupage .fooditem{
 	margin: auto 10%;
 	
 }
-#menupage .fooditem section{
+.menupage .fooditem section{
 	margin-bottom: 2rem;
 }
-#menupage h2{
+.menupage h2{
 	font-size: 4rem;
 	text-align: center;
 	text-transform: uppercase;
 }
-#menupage .foodlist {
+.menupage .foodlist {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-#menupage div{
+.menupage div{
 	text-align: center;
 }
-#menupage .fooditem h3{
+.menupage .fooditem h3{
 	text-transform: uppercase;
 	background-color: #435718;
 	color: #fff;
@@ -538,17 +544,17 @@ nav, footer{
 	
 	
 }
-#menupage .fooditem h5 {
+.menupage .fooditem h5 {
 	padding: .5rem 1rem;
 }
-#menupage div h5{
+.menupage div h5{
 	font-size: 2rem;
 	font-weight: 600;
 }
-#menupage div section{
+.menupage div section{
 	background-color:  #f4f1ec;
 }
-#menupage p{
+.menupage p{
 	font-size: 1.8rem;
 }
 .map {
@@ -579,13 +585,13 @@ nav, footer{
 	text-align: left;
 	margin: auto 3rem;
 }
-#menupage .map .schedules h3{
+.menupage .map .schedules h3{
 	background-color: transparent;
 	color: black;
 	font-weight:bold;
 	
 }
-#menupage .map p,#menupage .map article{
+.menupage .map p,.menupage .map article{
 	margin: auto 15%;
 	text-align: left;
 	text-transform: capitalize;
