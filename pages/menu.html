@@ -19,6 +19,57 @@
     <!-- stylesheets -->
     <link rel="stylesheet" href="../css/reset.css" type="text/css">
     <link rel="stylesheet" href="../css/style.css" type="text/css">
+
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous">
+</script>
+
+<script>
+    $(document).ready(function(){
+        $('#s').click(function(){
+            $('.chef-suggestion').show();
+            $('.antipasti').show();
+            $('.zuppe').show();
+            $('.insalate').show();
+            $('.paste').hide();
+            $('.pesce').hide();
+            $('.carne').hide();
+            $('.polli').hide();
+            $('.vegetatiano').hide();
+            $('.sides').hide();
+        })
+    })
+    $(document).ready(function(){
+        $('#e').click(function(){
+            $('.chef-suggestion').show();
+            $('.antipasti').hide();
+            $('.zuppe').hide();
+            $('.insalate').hide();
+            $('.paste').show();
+            $('.pesce').show();
+            $('.carne').show();
+            $('.polli').show();
+            $('.vegetatiano').hide();
+            $('.sides').hide();
+        })
+    })
+    $(document).ready(function(){
+        $('#t').click(function(){
+            $('.chef-suggestion').show();
+            $('.antipasti').hide();
+            $('.zuppe').hide();
+            $('.insalate').hide();
+            $('.paste').hide();
+            $('.pesce').hide();
+            $('.carne').hide();
+            $('.polli').hide();
+            $('.vegetatiano').show();
+            $('.sides').show();
+        })
+    })
+  </script>
 </head>
 
 <body id="menuPage">
@@ -78,14 +129,29 @@
         <div class="foodcat">
             <section>
                 <h3><a href="" id="s">Starters</a></h3>
+                <ul>
+                    <li><a href="#antipasti1">Antipasti</a></li>
+                    <li><a href="#zuppe1">Zuppe</a></li>
+                    <li><a href="#insalate1">Insalate</a></li>
+                </ul>
             </section>
 
             <section>
                 <h3><a href="">Entrees</a></h3>
+                <ul>
+                    <li><a href="#paste1">Paste</a></li>
+                    <li><a href="#pesce1">Pesce</a></li>
+                    <li><a href="#carne1">Carne</a></li>
+                    <li><a href="#polli1">Polli</a></li>
+                </ul>
             </section>
 
             <section>
                 <h3><a href="">Sides and Veggie</a></h3>
+                <ul>
+                    <li><a href="#vegetatiano1">Vegetatiano</a></li>
+                    <li><a href="#sides1">Sides</a></li>
+                </ul>
             </section>
         </div>
 
@@ -105,7 +171,7 @@
                 </article>
             </section>
 
-            <section class="antipasti">
+            <section class="antipasti" id="antipasti1">
                 <h3>antipasti</h3>
                 <article>
                     <h5>Calamaretti Fritti</h5>
@@ -162,7 +228,7 @@
                 </article>
             </section>
 
-            <section class="zuppe">
+            <section class="zuppe" id="zuppe1">
                 <h3>zuppe</h3>
                 <article>
                     <h5>Minestrone</h5>
@@ -183,7 +249,7 @@
                 </article>
             </section>
 
-            <section class="insalate">
+            <section class="insalate" id="insalate1">
                 <h3>insalate</h3>
                 <article>
                     <h5>Guido's</h5>
@@ -208,7 +274,7 @@
                 </article>
             </section> 
 
-            <section class="paste">
+            <section class="paste" id="paste1">
                 <h3>Paste</h3>
                 <article>
                     <h5>Ravioli di Aragosta</h5>
@@ -271,7 +337,7 @@
                 </article>
             </section>
 
-            <section class="pesce">
+            <section class="pesce"  id="pesce1">
                 <h3>pesce</h3>
                 <article>
                     <h5>Salmon Dijon</h5>
@@ -304,7 +370,7 @@
                 </article>
             </section>
 
-            <section class="carne">
+            <section class="carne" id="carne1">
                 <h3>carne</h3>
                 <article>
                     <h5>Vitello Parmigiana</h5>
@@ -337,7 +403,7 @@
                 </article>
             </section>
 
-            <section class="polli">
+            <section class="polli"  id="polli1">
                 <h3>polli</h3>
                 <article>
                     <h5>Chicken Picatta</h5>
@@ -364,7 +430,7 @@
                 </article>
             </section>
 
-            <section class="vegetatiano">
+            <section class="vegetatiano" id="vegetatiano1">
                 <h3>vegetariano</h3>
                 <article>
                     <h5>Eggplant Parmigian</h5>
@@ -397,7 +463,7 @@
                 </article>
             </section>
 
-            <section class="sides">
+            <section class="sides" id="sides1">
                 <h3>sides</h3>
                 <article>
                     <h5>Saute`ed Spinach</h5>
@@ -411,8 +477,10 @@
             </section> 
         </div>
 
-        <div class="map">
-            <button><a href="./reservations.html">Make A Reservation</a></button>
+        <div class="map-menu">
+            <div class="button">
+                <button><a href="reservations.html">Make A Reservation</a></button>
+            </div>
             <div class="map2">
                 <img src="../images/Map.JPG" alt="Map">
                 <p>11980 Santa Monica Blvd <br>Los Angeles, CA 90025</p>
