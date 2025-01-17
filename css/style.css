@@ -431,6 +431,7 @@ nav, footer{
 #mail, #about{
     background-color: #ddd;
     margin-top: 0;
+    padding: 2rem 10%;
 }
 #reserv, #menu{
 	margin-top: 5rem;
@@ -440,6 +441,7 @@ nav, footer{
 }
 #about p{
 	margin: auto 5%;
+    padding-bottom: 2rem;
 }
 .where-to-find-us h2, #about h2,
  #menu h2, .why-us h2, 
@@ -452,14 +454,20 @@ nav, footer{
 .button{
 	display: flex;
 	justify-content: center;
-	padding-top: 1.5rem;
+    padding: 2rem 3rem;
+	/* padding-top: 1.5rem; */
+}
+.buttonlink{
+	border: solid 1px #000;
+	color: #fff;
+	background-color: #000;
+	margin: 1rem 30%;
+	text-align: center;
+	padding:2rem 3rem;
+	font-size: 1.5rem;
+
 }
 
-#about button, .map-menu button{
-	background-color: #000;	
-	color: #fff;
-	padding: 2rem 3rem;
-}
 #menu button{
 	background-color: #435718;
 	padding: 2rem 3rem;}
@@ -505,9 +513,9 @@ nav, footer{
 }
 #about img{
 	padding: 1rem 10%;
-	width:700px
+	width:700px;
 }
-#about div, #menu div{
+ #menu div{
 	padding-bottom: 3rem;
 }
 #menu img{
@@ -526,8 +534,10 @@ nav, footer{
 	color: #000;
 	font-size: 5.5rem;
 }
-#about button{
-	background-color: #000;	
+
+#menu .buttonlink{
+	border-color: #435718;
+	background-color: #435718;
 }
 #menu .more{
 	background-color: #435718;
@@ -642,7 +652,7 @@ nav, footer{
 
 }
 .map-menu img {
-	margin: 4rem 7rem;
+	margin: 0 7rem 4rem 7rem;
 	width: 500px auto;
 }
 .map-menu p{
@@ -674,7 +684,6 @@ nav, footer{
 	font-size: 4rem;
 	color: #435718;
 	text-align: left;
-	margin: auto 10%;
 	padding-top: 2rem;
 }
 #mail textarea {
@@ -686,6 +695,10 @@ nav, footer{
 	text-align: left;
 	line-height: 3rem;
 }
+
+/*////////////////////////////  Catering Page  ////////////////////////////*/
+
+
 
 
 /*////////////////////////////  Contact Page  ////////////////////////////*/
@@ -990,20 +1003,17 @@ nav, footer{
 }
 #address {
 	display: grid;
-	grid-template-columns: 1.6fr .9fr;
+	grid-template-columns: 1fr 1fr;
 	gap: 1rem;
     margin: auto 5%;
 }
-#about {
-    height:550px;
+.about1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
-#about img{
-    float: left;
-    width: 450px;
-    padding:1rem 2rem;
-}
-#about p{
-    padding:0;
+.about1 h2{
+    grid-column-start: 1;
+    grid-column-end: -1;
 }
 #menu .food{
 	display: grid;
@@ -1047,11 +1057,11 @@ nav, footer{
 	grid-template-columns: 2fr .95fr;
 	justify-content: center;
 	align-items: center;
-	background-color: #f4f1ec;
+	background-color: #ddd;
 	width: 100%;
 }  
 #mail div{
-	margin: auto 100px;
+	margin: auto 2rem;
 }
 .map-menu{
 	display: grid;
@@ -1104,9 +1114,9 @@ nav, footer{
             #about img{
                 width: 600px;}
             #about p{
-                font-size: 3rem;
-                font-weight: 400;
-                line-height: 5rem;
+                font-size: 2rem;
+		        font-weight: 500;
+		        line-height: 4rem;
             }
             #about{
                 height: 600px;
