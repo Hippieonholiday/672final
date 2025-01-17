@@ -251,7 +251,9 @@ p{
     font-size: 1.4em;
     margin-bottom: 1rem;
 }
-
+a{
+    text-decoration: none;
+}
 
 /*////////////////////////////  Header & Nav  ////////////////////////////*/
 .logo{
@@ -419,17 +421,31 @@ nav, footer{
 /*////////////////////////////  Home Page  ////////////////////////////*/
 #home main{
     margin-top: 10rem;
+    background-color: #f4f1ec;
 }
-#address, #about, #menu, #mail{
+#address, #menu{
 	margin: auto 10%;
 }
-#address, #reserv, #about, #menu, #mail{
+#address h2{margin-top: 0;
+    padding-top: 2rem;}
+#mail, #about{
+    background-color: #ddd;
+    margin-top: 0;
+}
+#reserv, #menu{
 	margin-top: 5rem;
 }
-.where-to-find-us h2, #about h2, #menu h2, .why-us h2, .catering h2, .our-menu h2 {
+#about h2{
+	padding-top: 2rem;
+}
+#about p{
+	margin: auto 5%;
+}
+.where-to-find-us h2, #about h2,
+ #menu h2, .why-us h2, 
+ .catering h2, .our-menu h2 {
 	color:  #D92721;
 	text-transform: uppercase;	
-	/* text-align: center; */
 	font-size: 3.25rem;
 	font-family: "Playfair Display", serif;
 }
@@ -447,9 +463,9 @@ nav, footer{
 #menu button{
 	background-color: #435718;
 	padding: 2rem 3rem;}
-    #about a,#menu a{
-        color: #fff;
-    }
+#about a,#menu a{
+    color: #fff;
+}
 .where-to-find-us p{
 	letter-spacing: .6rem;
 	font-family: "Playfair Display", serif;
@@ -467,6 +483,8 @@ nav, footer{
 }
 .map{
 	margin-top: 3rem;
+    display: flex;
+    justify-content: center;
 }
 #reserv {
 	width:100%
@@ -482,9 +500,22 @@ nav, footer{
 	font-weight: 550;
 	line-height: 3rem;
 }
-#about img, #menu img{
-	margin: 0 auto 2rem auto;
+#reserv img{
+	width: 800px;
 }
+#about img{
+	padding: 1rem 10%;
+	width:700px
+}
+#about div, #menu div{
+	padding-bottom: 3rem;
+}
+#menu img{
+	padding: 0 auto 2rem auto;
+}
+/* #about img, #menu img{
+	margin: 0 auto 2rem auto;
+} */
 #about .more, #menu .more{
 	
 	font-size: 2.5rem;
@@ -495,8 +526,7 @@ nav, footer{
 	color: #000;
 	font-size: 5.5rem;
 }
-a{text-decoration: none;}
-.about button{
+#about button{
 	background-color: #000;	
 }
 #menu .more{
@@ -519,7 +549,7 @@ a{text-decoration: none;}
 }
 #menu p{
 	font-size: 2rem;
-	margin: auto 2.5rem;
+	/* margin: auto 2.5rem; */
 	line-height: 5rem;
 }
 
@@ -536,13 +566,17 @@ a{text-decoration: none;}
 
 
 /*////////////////////////////  Menu Page  ////////////////////////////*/
+#menupage{
+	background-color: #fff;
+}
 #menuPage main{
     margin-top: 15rem;
 }
 .foodcat {
 	display: flex;
 	margin: 2rem 10%;
-	justify-content: space-between;
+	justify-content: space-around;
+    background-color: #f4f1ec;
 	
 }
 .foodcat h3 a{
@@ -640,7 +674,8 @@ a{text-decoration: none;}
 	font-size: 4rem;
 	color: #435718;
 	text-align: left;
-	margin: 2rem 10%;
+	margin: auto 10%;
+	padding-top: 2rem;
 }
 #mail textarea {
 	display: block;
@@ -948,10 +983,48 @@ a{text-decoration: none;}
             margin: 0;
         }
 /*////////Home  Page- Main ////////*/ 
+.headline img{
+	width: 1600px;
+	height: auto;
+	
+}
 #address {
 	display: grid;
 	grid-template-columns: 1.6fr .9fr;
-	gap: 8rem;
+	gap: 1rem;
+    margin: auto 5%;
+}
+#about {
+    height:550px;
+}
+#about img{
+    float: left;
+    width: 450px;
+    padding:1rem 2rem;
+}
+#about p{
+    padding:0;
+}
+#menu .food{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap:1rem;
+	
+}
+#menu h3{
+	font-size: 3rem;
+	padding:2rem auto;
+
+}
+#menu img{
+	width:200px;
+	display: block;
+	width:95%;
+	margin: auto ;
+}
+
+#mail h3{
+	text-align: left;
 }
 #reserv img{
 	width:1600px;
@@ -965,7 +1038,11 @@ a{text-decoration: none;}
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 }
+.fooditem section{
+	margin: 2rem 10%;
+}
 #mail {
+    margin:0;
 	display:grid;
 	grid-template-columns: 2fr .95fr;
 	justify-content: center;
@@ -976,6 +1053,20 @@ a{text-decoration: none;}
 #mail div{
 	margin: auto 100px;
 }
+.map-menu{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+.map-menu .button{
+	grid-column-start: 1;
+	grid-column-end: -1;
+}
+.map-menu .img, .map-menu p,
+.map-menu .schedules{
+	padding:auto 10%;
+}
+.foodcat {
+	margin: 2rem 20%;}
 
  /*//////// Contact Page ////////*/
         #contactPage h1{
@@ -1004,5 +1095,20 @@ a{text-decoration: none;}
             .logo {
                 width: 200px;
                 height: auto;
+            }
+
+/*////////Home  Page- Main ////////*/ 
+            #address{
+                margin:auto 15%;
+            }
+            #about img{
+                width: 600px;}
+            #about p{
+                font-size: 3rem;
+                font-weight: 400;
+                line-height: 5rem;
+            }
+            #about{
+                height: 600px;
             }
 }
