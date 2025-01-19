@@ -855,7 +855,7 @@ nav, footer{
     flex-direction: column;
     align-items: center;
     min-width: 340px;
-    margin: 83px 5px 0px 5px;
+    margin: 83px 5px 0 5px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -864,7 +864,6 @@ nav, footer{
 }
 #aboutUsPage p{
     font-size: 1.6em;
-    line-height: 2em;
 }
 #aboutUsPage .about-hero{
     background-image: url('../images/Aboutus.JPG');
@@ -894,6 +893,7 @@ nav, footer{
 article.about p{
     max-width: 1200px;
     font-style: italic;
+    line-height: 2em;
     border: solid 0.5px #f4f1ec;
     padding: 25px;
 }
@@ -921,6 +921,7 @@ article.about p{
 }
 .about p {
     font-size: 1rem;
+    line-height: 2em;
     margin: 15px 13px;
 }
 
@@ -958,7 +959,9 @@ article.about p{
 }
 
 #galleryPage .intro-text p {
-  font-size: 3rem;
+    font-family: 'Perpetua Regular';
+    font-style: italic;
+    font-size: 3.5em;
 }
 
 .gallery {
@@ -1357,41 +1360,44 @@ article.about p{
         
         
 /*//////// About Us Page ////////*/
+        #aboutUsPage main{
+            margin: 83px 0 25px 0;
+        }
         #aboutUsPage .about-hero {
-            height: 550px;
+            height: 570px;
+            background-position: center 40%;
         }
         #aboutUsPage .about-hero h1 {
             margin: 50px 0 0 161px;
         }
         #aboutUsPage .about-hero p {
-            margin: -35px 0 0 161px;
+            margin: -10px 0 0 161px;
         }
         article.about p{
             border: solid 0.5px #f4f1ec;
-            padding: 50px;
+            padding: 50px 85px;
         }
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        #aboutUsPage section.about {
+            grid-template-columns: 1fr 1fr;
+        }
+        section.about img {
+            width: 85%;
+            justify-self: center;
+        }
+        .about:nth-child(odd) img {
+            grid-column: 2;
+        }
+        .about:nth-child(odd) h2, .about:nth-child(odd) p {
+            grid-column: 1;
+        }
+        .about:nth-child(even) img {
+            grid-column: 1;
+        }
+        .about:nth-child(even) h2, .about:nth-child(even) p {
+            grid-column: 2;
+        }
+        section.about p, section.about h2 {
+            margin: 5px 10px 5px 40px;
+        }
+
 }
