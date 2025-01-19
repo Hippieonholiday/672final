@@ -6,6 +6,7 @@
 }
 
 /*********************** nav ******************/     
+/*
 .navbar {
 	display: flex;
 	align-items: center;
@@ -68,14 +69,12 @@
 header {
 	margin-top: 50px;
 	text-align: center;
-	/* padding: 20px; */
 }
 header .headline h1, header .headline h2 {
 	margin: 10px 0;
 }
-footer a {
-	color: limegreen;
-}
+*/
+
 
 /* Hamburger Menu */
 .showMenu {
@@ -102,14 +101,7 @@ nav ul.menu {
 	display: none;
 }
 .clearIt { clear:both; }
-nav {
-	background-color: #76dce5;
-	text-align: center;
-	margin-bottom: 2em;
-}
-nav li {
-	border-bottom: solid 1px white;
-}
+
 nav a {
 	/* font-weight: bold; */
 	font-size: larger;
@@ -117,10 +109,6 @@ nav a {
 	color:white;
 	padding: .8rem;
 	display: block;
-}
-nav a:hover {
-	background-color: #14818b;
-	color:rgb(2, 2, 53); 
 }
 
 /* begin code for table */
@@ -239,6 +227,12 @@ html, body {
     font-weight: normal;
     src: local('Perpetua Regular'), url('../fonts/perpetuaRegular.ttf') format('ttf');
 }
+@font-face {
+    font-family: 'Whitestar Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Whitestar Regular'), url('../fonts/Whitestar-9Ywj7.woff') format('woff');
+}
 html{font: 10px Verdana, sans-serif;}
 body {font-family: Arial, sans-serif;}
 h1{
@@ -247,13 +241,8 @@ h1{
 }
 h2{font-size: 2.8em;}
 h3{font-size: 1.5em;}
-p{
-    font-size: 1.4em;
-    margin-bottom: 1rem;
-}
-a{
-    text-decoration: none;
-}
+p{font-size: 1.4em;}
+a{text-decoration: none;}
 
 /*////////////////////////////  Header & Nav  ////////////////////////////*/
 .logo{
@@ -713,7 +702,7 @@ nav, footer{
 /************* Form *************/
 .contactForm form {
     min-width: 340px;
-    max-width: 580px;
+    max-width: 700px;
     margin: 0 auto;
     padding: 20px;
     border: 2px solid #f4f1ec;
@@ -758,7 +747,7 @@ nav, footer{
     margin: 0;
 }
 #contactPage .submitContact {
-    width: 85%;
+    width: 80%;
     background-color: #842D2A;
     color: #f4f1ec;
     border: none;
@@ -774,7 +763,7 @@ nav, footer{
 /*//////////////////////////// Map and Directions Page ////////////////////////////*/
 #MDPage main {
     max-width: 1200px;
-    margin: 120px auto 70px auto;
+    margin: 120px auto 30px auto;
 }
 .MDInfo{
     padding: 15px; 
@@ -790,7 +779,7 @@ nav, footer{
     flex-wrap: wrap;
     justify-content: center;
     margin: 10px auto;
-    max-width: 1200px;
+    max-width: 1000px;
     gap: 10px;
 }
 #MDPage .column {
@@ -798,12 +787,17 @@ nav, footer{
     min-width: 300px;
     padding: 10px;
 }
+#MDPage .MDAdress{
+    font-size: 1.2em;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+}
 #MDPage .column h2{
     font-family: 'Perpetua Regular';
     font-weight: bold;
-    font-size: 3em;
+    font-size: 3.2em;
     color: #842D2A;
-    margin: 15px 0;
+    margin: 15px 0 30px 0;
     text-align: center;
 }
 #MDPage .column h3{
@@ -821,25 +815,27 @@ nav, footer{
     font-size: 1.4em;
     line-height: 1.5em;
 }
-#MDPage ul {
+#MDPage .column ul {
     list-style-position: inside;
     margin-bottom: 30px;
 }
+#MDPage .columnRightContent h3{
+    margin-bottom: 20px;
+}
 #MDPage .columnRightContent ul li {
     list-style-type: circle;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
+}
+#MDPage .columnRightContent ul {
+    padding-bottom: 15px;
 }
 #MDPage .map {
-    margin: 20px auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    margin: 15px auto;
 }
 #MDPage iframe {
     border: none;
-    width: 100%;
-    height: 400px;
-    max-width: 1200px;
+    width: 95%;
+    height: 360px;
     border-radius: 8px;
     margin-top: 10px;
 }
@@ -855,10 +851,79 @@ nav, footer{
 
 /*////////////////////////////  About Us Page  ////////////////////////////*/
 #aboutUsPage main{
-    max-width: 1200px;
-    margin: 150px auto 70px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 340px;
+    margin: 83px 5px 0px 5px;
+    margin-left: auto;
+    margin-right: auto;
 }
-#aboutUsPage h2{padding-top: 2rem;}
+#aboutUsPage h2{
+    padding-top: 2rem;
+}
+#aboutUsPage p{
+    font-size: 1.6em;
+    line-height: 2em;
+}
+#aboutUsPage .about-hero{
+    background-image: url('../images/Aboutus.JPG');
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: #fff;
+    padding: 0 20px;
+    gap: 70px;
+}
+#aboutUsPage .about-hero h1{
+    font-size: 7em;
+    text-shadow: 0 0 4px #54382A;
+    margin: 30px 0 0 10px;
+}
+#aboutUsPage .about-hero p{
+    font-family: 'Whitestar Regular';
+    font-size: 4.5em;
+    text-shadow: 0 0 4px #54382A;
+    margin: 0 0 0 10px;
+}
+article.about p{
+    max-width: 1200px;
+    font-style: italic;
+    border: solid 0.5px #f4f1ec;
+    padding: 25px;
+}
+#aboutUsPage section.about{
+    max-width: 1200px;
+    padding: 30px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f1ec;
+}
+#aboutUsPage section.about:nth-child(even) {
+    border: solid 0.5px #f4f1ec;
+    background-color: #fff;
+    color: #435718;
+}
+#aboutUsPage .about img {
+    max-width: 100%;
+    
+}
+.about h2 {
+    font-size: 2.5rem;
+    margin: 20px 0;
+}
+.about p {
+    font-size: 1rem;
+    margin: 15px 13px;
+}
+
 
 
 /*////////////////////////////  Gallery Page  ////////////////////////////*/
@@ -866,16 +931,116 @@ nav, footer{
     max-width: 1200px;
     margin: 150px auto 70px auto;
 }
-#galleryPage h2{padding-top: 2rem;}
+#galleryPage h2{
+    padding-top: 2rem;
+}
+#galleryPage .intro-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1%;
+  align-items: center;
+  padding: 2rem;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 2rem;
+}
 
+#galleryPage .intro-section img {
+  flex: 1 1 100%;
+  max-width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 25px;
+}
+
+#galleryPage .intro-text {
+  flex: 1 1 100%;
+  text-align: center;
+  color: #435718;
+}
+
+#galleryPage .intro-text p {
+  font-size: 3rem;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+#galleryPage main h1 {
+  text-align: center;
+  margin: 15px;
+  font-size: 7em;
+}
+
+.gallery-item {
+  flex: 1 1 calc(100% - 2rem);
+  /* Mobile full width */
+  max-width: 100%;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition-duration: 500ms;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+  transition-duration: 500ms;
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.lightbox.active {
+  display: flex;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
 
 
 
 /*////////////////////////////  Responsive Sizing  ////////////////////////////*/
 
 /************* Media Queries - Intermediate screen *************/
-    @media (min-width: 800px) {
-               
+    @media (min-width: 763px) {
+        .logo {
+            width: 150px;
+            height: auto;
+        }       
+        
 /******************** Navegation bar *******************/
         /***** remove hamburgue menu ****/
         .showMenu{
@@ -952,7 +1117,6 @@ nav, footer{
             background-color: #f4f1ec;
             color: #842D2A;
         }
-
         
         /***** Footer *****/
         .menuFooter{
@@ -982,93 +1146,97 @@ nav, footer{
             font-size: 1.6em;
             margin: 0;
         }
+        
+        
 /*////////Home  Page- Main ////////*/ 
-.headline img{
-	width: 1600px;
-	height: auto;
-	
-}
-#address {
-	display: grid;
-	grid-template-columns: 1.6fr .9fr;
-	gap: 1rem;
-    margin: auto 5%;
-}
-#about {
-    height:550px;
-}
-#about img{
-    float: left;
-    width: 450px;
-    padding:1rem 2rem;
-}
-#about p{
-    padding:0;
-}
-#menu .food{
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	gap:1rem;
-	
-}
-#menu h3{
-	font-size: 3rem;
-	padding:2rem auto;
+        .headline img{
+            width: 1600px;
+            height: auto;
 
-}
-#menu img{
-	width:200px;
-	display: block;
-	width:95%;
-	margin: auto ;
-}
+        }
+        #address {
+            display: grid;
+            grid-template-columns: 1.6fr .9fr;
+            gap: 1rem;
+            margin: auto 5%;
+        }
+        #about {
+            height:550px;
+        }
+        #about img{
+            float: left;
+            width: 450px;
+            padding:1rem 2rem;
+        }
+        #about p{
+            padding:0;
+        }
+        #menu .food{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap:1rem;
 
-#mail h3{
-	text-align: left;
-}
-#reserv img{
-	width:1600px;
-	height: auto;
-}
+        }
+        #menu h3{
+            font-size: 3rem;
+            padding:2rem auto;
+
+        }
+        #menu img{
+            width:200px;
+            display: block;
+            width:95%;
+            margin: auto ;
+        }
+
+        #mail h3{
+            text-align: left;
+        }
+        #reserv img{
+            width:1600px;
+            height: auto;
+        }
 
 
 
-   /*//////// Menu Page ////////*/   
-   .fooditem div{
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-}
-.fooditem section{
-	margin: 2rem 10%;
-}
-#mail {
-    margin:0;
-	display:grid;
-	grid-template-columns: 2fr .95fr;
-	justify-content: center;
-	align-items: center;
-	background-color: #f4f1ec;
-	width: 100%;
-}  
-#mail div{
-	margin: auto 100px;
-}
-.map-menu{
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-}
-.map-menu .button{
-	grid-column-start: 1;
-	grid-column-end: -1;
-}
-.map-menu .img, .map-menu p,
-.map-menu .schedules{
-	padding:auto 10%;
-}
-.foodcat {
-	margin: 2rem 20%;}
+/*//////// Menu Page ////////*/   
+        .fooditem div{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .fooditem section{
+            margin: 2rem 10%;
+        }
+        #mail {
+            margin:0;
+            display:grid;
+            grid-template-columns: 2fr .95fr;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f1ec;
+            width: 100%;
+        }  
+        #mail div{
+            margin: auto 100px;
+        }
+        .map-menu{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .map-menu .button{
+            grid-column-start: 1;
+            grid-column-end: -1;
+        }
+        .map-menu .img, .map-menu p,
+        .map-menu .schedules{
+            padding:auto 10%;
+        }
+        .foodcat {
+            margin: 2rem 20%;}
 
- /*//////// Contact Page ////////*/
+        
+        
+/*//////// Contact Page ////////*/
         #contactPage h1{
             font-size: 7em;
         }
@@ -1077,10 +1245,6 @@ nav, footer{
             font-size: 2em;
         }
         
-        .logo {
-            width: 150px;
-            height: auto;
-        }
         
         
 /*//////// Map and Directions Page ////////*/        
@@ -1088,7 +1252,83 @@ nav, footer{
             gap: 50px;
         }
         
+
+
+/*//////// About Us Page ////////*/
+        #aboutUsPage .about-hero {
+            height: 470px;
+            background-position: center;
+            gap: unset;
+        }
+        #aboutUsPage .about-hero h1 {
+            margin: 40px 0 0 30px;
+        }
+        #aboutUsPage .about-hero p {
+            margin: -32px 0 0 30px;
+        }
+        article.about p{
+            border: solid 0.5px #f4f1ec;
+            padding: 30px;
+        }
+        #aboutUsPage h2 {
+            padding-top: 0;
+        }
+        .about p {
+            margin: 25px 25px;
+        }
+        #aboutUsPage section.about {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 20px;
+            align-items: start;
+            padding: 30px 30px;
+        }
+        section.about img {
+            grid-column: 1;
+            grid-row: 1 / span 3;
+            width: 100%;
+            align-self: center;
+        }
+        section.about h2 {
+            grid-column: 2;
+            grid-row: 1;
+            margin: 0 5px; 
+        }
+        section.about p {
+            grid-column: 2;
+            grid-row: auto;         
+            margin: 12px 5px 0 5px;
+        }        
+
+
+        
+/*//////// Gallery Page ////////*/
+        #galleryPage .intro-section {
+            justify-content: space-between;
+        }
+
+        #galleryPage .intro-section img {
+            max-width: 49%;
+            border-bottom: 0;
+        }
+
+        #galleryPage .intro-text {
+            text-align: center;
+            max-width: 49%;
+        }
+
+        .gallery-item {
+            flex: 1 1 calc(50% - 2rem);
+          }
+        }
+
+        @media (min-width: 1200px) {
+          .gallery-item {
+            flex: 1 1 calc(25% - 2rem);
+          }
 }
+
+
 
 /************* Media Queries - Large screen *************/
     @media (min-width: 1200px) {
@@ -1097,6 +1337,8 @@ nav, footer{
                 height: auto;
             }
 
+        
+        
 /*////////Home  Page- Main ////////*/ 
             #address{
                 margin:auto 15%;
@@ -1111,4 +1353,45 @@ nav, footer{
             #about{
                 height: 600px;
             }
+        
+        
+        
+/*//////// About Us Page ////////*/
+        #aboutUsPage .about-hero {
+            height: 550px;
+        }
+        #aboutUsPage .about-hero h1 {
+            margin: 50px 0 0 161px;
+        }
+        #aboutUsPage .about-hero p {
+            margin: -35px 0 0 161px;
+        }
+        article.about p{
+            border: solid 0.5px #f4f1ec;
+            padding: 50px;
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
 }
