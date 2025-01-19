@@ -19,6 +19,9 @@
     <!-- stylesheets -->
     <link rel="stylesheet" href="../css/reset.css" type="text/css">
     <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <link rel="stylesheet" href="../css/gallery.css" type="text/css">
+
+    <script src="../script/jquery-min.js"></script>
 </head>
 
 <body id="galleryPage">
@@ -74,66 +77,47 @@
 
     <!-- Main -->
     <main>
-        <!-- Gallery Header -->
-        <section class="gallery-header">
-            <h1>Our Restaurant</h1>
-            <p>Experience the warmth and flavors of authentic Italian dining</p>
+        <h1>Gallery</h1>
+
+        <section class="intro-section">
+            <img src="../images/italian-patio.jpg" alt="italian patio">
+            <section class="intro-text">
+                <p>Step into Guido's, where every meal feels like home. Explore the moments that make us special.</p>
+            </section>
         </section>
-    
-        <!-- Atmosphere Gallery -->
-        <section class="gallery-section">
-            <h2>Our Atmosphere</h2>
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="#" alt="#">
-                    <p>Main Dining Room</p>
-                </div>
-                <div class="gallery-item">
-                    <img src="#" alt="#">
-                    <p>Al Fresco Dining</p>
-                </div>
-                <div class="gallery-item">
-                    <img src="#" alt="#">
-                    <p>Private Events Space</p>
-                </div>
-                <div class="gallery-item">
-                    <img src="#" alt="#">
-                    <p>Wine & Cocktail Bar</p>
-                </div>
-            </div>
-        </section>
-    
-        <!-- Food Gallery -->
-        <section class="gallery-section">
-            <h2>Our Cuisine</h2>
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="#" alt="#">
-                    <p>Handmade Pasta</p>
-                </div>
-                <div class="gallery-item">
-                    <img src="#" alt="#">
-                    <p>Wood-Fired Pizza</p>
-                </div>
-                <div class="gallery-item">
-                    <img src="#" alt="#">
-                    <p>Traditional Desserts</p>
-                </div>
-                <div class="gallery-item">
-                    <img src="#" alt="#">
-                    <p>Fine Italian Wines</p>
-                </div>
-                <div class="gallery-item">
-                    <img src="#" alt="#">
-                    <p>Antipasti Selection</p>
-                </div>
-                <div class="gallery-item">
-                    <img src="#" alt="#">
-                    <p>Fresh Seafood</p>
-                </div>
-            </div>
+
+        <section class="gallery">
+            <section class="gallery-item">
+                <img src="../images/FetaBruschetta.jpg" alt="Feta Bruschetta">
+            </section>
+            <section class="gallery-item">
+                <img src="../images/FetaBruschetta.jpg" alt="Feta Bruschetta">
+            </section>
+            <section class="gallery-item">
+                <img src="../images/FetaBruschetta.jpg" alt="Feta Bruschetta">
+            </section>
+            <section class="gallery-item">
+                <img src="../images/FetaBruschetta.jpg" alt="Feta Bruschetta">
+            </section>
+            <section class="gallery-item">
+                <img src="../images/FetaBruschetta.jpg" alt="Feta Bruschetta">
+            </section>
+            <section class="gallery-item">
+                <img src="../images/FetaBruschetta.jpg" alt="Feta Bruschetta">
+            </section>
+            <section class="gallery-item">
+                <img src="../images/FetaBruschetta.jpg" alt="Feta Bruschetta">
+            </section>
+            <section class="gallery-item">
+                <img src="../images/FetaBruschetta.jpg" alt="Feta Bruschetta">
+            </section>
         </section>
     </main>    
+
+    <section class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose">&times;</button>
+        <img id="lightboxImage" src="" alt="">
+    </section>
 
     <!-- Footer-->
     <footer>
@@ -161,5 +145,27 @@
             <p>Copyright &copy; 2024 Guido’s LA | All rights reserved.</p>
         </section>
     </footer>
+
+    <script>
+        $(document).ready(function() {
+            const $lightbox = $('#lightbox');
+            const $lightboxImage = $('#lightboxImage');
+
+            $('.gallery-item img').on('click', function() {
+                $lightboxImage.attr('src', $(this).attr('src'));
+                $lightbox.addClass('active');
+            });
+
+            $('#lightboxClose').on('click', function() {
+                $lightbox.removeClass('active');
+            });
+
+            $lightbox.on('click', function(e) {
+                if ($(e.target).is($lightbox)) {
+                    $lightbox.removeClass('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
