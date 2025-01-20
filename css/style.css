@@ -843,10 +843,28 @@ nav, footer{
 
 /*////////////////////////////  Policies Page  ////////////////////////////*/
 #policiesPage main{
-    max-width: 100px;
+    max-width: 1000px;
     margin: 150px auto 70px auto;
+    padding: 0 10px;
 }
-#policiesPage h2{padding-top: 2rem;}
+.policiesTitle{
+    margin-bottom: 2.5rem;
+}
+.policiesBody h2{
+    color: #435718;
+    padding-top: 2rem;
+}
+.policiesBody p{
+    line-height: 2rem;
+}
+.policiesBody a{
+    color: #435718;
+}
+.policiesBody a:hover {
+    background-color: #435718;
+    color: #f4f1ec;
+}
+
 
 
 /*////////////////////////////  About Us Page  ////////////////////////////*/
